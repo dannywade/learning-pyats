@@ -1,0 +1,16 @@
+testbed:
+  name: DevNet_Testbed
+
+devices:
+  csr1000v-1: # <----- must match to your device hostname in the prompt
+    os: iosxe
+    type: iosxe
+    credentials:
+      default:
+        username: developer
+        password: C1sco12345
+    connections:
+      cli:
+        protocol: ssh
+        ip: 64.103.37.51
+        port: 8181
